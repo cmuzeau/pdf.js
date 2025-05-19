@@ -327,6 +327,8 @@ class TextLayer {
       (this.#fontInspectorEnabled && style.fontSubstitution) ||
       style.fontFamily;
 
+    fontFamily = geom.fontName;
+
     // Workaround for bug 1922063.
     fontFamily = TextLayer.fontFamilyMap.get(fontFamily) || fontFamily;
     const fontHeight = Math.hypot(tx[2], tx[3]);
