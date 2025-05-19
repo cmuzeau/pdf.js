@@ -68,7 +68,7 @@ class FontLoader {
 
   clear() {
     for (const nativeFontFace of this.nativeFontFaces) {
-      this._document.fonts.delete(nativeFontFace);
+      // this._document.fonts.delete(nativeFontFace);
     }
     this.nativeFontFaces.clear();
     this.#systemFonts.clear();
